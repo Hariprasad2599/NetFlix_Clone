@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: black;
+}
+
+html {
+    font-size: 62.5%;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+:root {
+    --primary-color: #e50914;
+}
+
+.primary--btn {
+    background-color: var(--primary-color);
+    line-height: normal;
+    padding: 0.7rem 1.7rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.left-img {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 50px;
+    z-index: 2;
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.custom-btn {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 70px;
+    top: 20px; 
+    right: 50px;
+    z-index: 3;
+    font-size: 24px;
+    background-color: red !important;
+    border-color:white !important;
+    color: white !important;
+
+}
+
+.Img {
+    max-width: 100%;
+    height: 1200px;
+    z-index: 1;
+}
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 0rem 5rem;
+}
+
+.banner__title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.banner__subtitle {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    color: white;
+}
+
+.membership__form {
+    display: grid;
+    position: relative;
+}
+
+.membership__input__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.membership__input {
+    flex-basis: 100%;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 100px;
+    padding-bottom: 1.3rem;
+    border: 1px solid white; 
+    font-size: 1.5rem;
+    background-color: rgb(45, 44, 44); 
+    border-radius: 5px;
+        color: white; 
+
+    
+}
+.membership__input:focus {
+    outline: none;
+}
+.membership__btn {
+    justify-self: center;
+    width: 100%;
+    max-width: 20rem;
+    padding: 1.5rem 3rem;
+}
+
+.form__cta {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: white;
+}
+
+.Story_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+.story_container_left,
+.story_container_right {
+    flex: 1;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 50vh;
+}
+
+.Left {
+    margin-top: 45px;
+    position: relative;
+    top: 45px;
+    margin-left: 250px;
+}
+
+.Left h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+.Left h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Left {
+    margin-top: 40px;
+}
+
+.download__container {
+    position: relative;
+}
+
+.download__container img {
+    width: 100%;
+    height: 100%;
+}
+
+.download__animation__container {
+    display: grid;
+    grid-template-columns: 4rem 1fr 5rem;
+    width: 60%;
+    height: 8rem;
+    padding: 1rem;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    background: black;
+}
+
+.download__animation__container .poster {
+    height: 90%;
+}
+
+.download__animation__container .download__gif {
+    height: 90%;
+}
+
+.download__animation__container .text__container .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.download__animation__container .text__container .downloading {
+    font-size: 1.2rem;
+    color: #0071eb;
+}
+
+.download__animation__container .text__container {
+    padding-left: 2rem;
+}
+
+.video_container {
+    margin-top: 50px;
+
+}
+
+.Story_container {
+    display: flex;
+    align-items: center;
+}
+
+.story_container_left,
+.story_container_right {
+    flex: 1;
+}
+
+.img_container {
+    width: 120%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.img_container img {
+    width: 800px;
+    height: auto;
+    max-width: 180%;
+    border-radius: 20px;
+}
+
+.Left {
+    padding: 0 20px;
+}
+
+.main-title {
+    font-size: 0px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.sub-title {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #e20909;
+}
+.story_container_stream{
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.mai-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.footer {
+    padding: 8rem 6rem 4rem;
+    width: 100%;
+    margin: 0;
+    background-color: #000; }
+
+.footer__container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer__link__container {
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2rem;
+}
+
+.footer__link {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__link.contact--link {
+    display: inline-block;
+    margin: 3rem 0;
+}
+/* Example Media Queries */
+@media screen and (max-width: 768px) {
+    /* CSS rules for screens up to 768px wide */
+}
+
+@media screen and (max-width: 480px) {
+    /* CSS rules for screens up to 480px wide */
+}
+/* Example of Responsive CSS */
+@media screen and (max-width: 768px) {
+    .Left {
+        margin-left: 0;
+        text-align: center;
+    }
+    .Left h1 {
+        font-size: 28px;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Left h1 {
+        font-size: 24px;
+    }
+    .sub-title {
+        font-size: 20px;
+    }
+    .image-container {
+        display: none;
+    }
+}
+
+/* Example of Responsive Navigation */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show the hamburger menu button */
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide the navigation menu by default */
+    }
+
+    .navbar-collapse.show {
+        display: flex; /* Show the navigation menu when toggled */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar-collapse.show .nav-item {
+        text-align: center; /* Center-align menu items */
+    }
+}
+
+/* Adjustments for extra small screens */
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        margin-left: 0; /* Center-align the brand/logo */
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 0; /* Center-align the hamburger menu button */
+    }
+}
